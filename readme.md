@@ -1,6 +1,6 @@
 # [dclong/jupyterhub-julia](https://hub.docker.com/r/dclong/jupyterhub-julia/)
 
-JupyterHub with Julia in Docker.
+JupyterHub with Julia (via the [IJulia Kernel](https://github.com/JuliaLang/IJulia.jl)) in Docker.
 **It is suggested that you use [dclong/jupyterhub-ds](https://hub.docker.com/r/dclong/jupyterhub-ds/)
 for data science related work.**
 
