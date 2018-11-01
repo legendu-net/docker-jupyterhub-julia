@@ -6,7 +6,7 @@ for data science related work.**
 
 ## Detailed Information
 
-OS: Ubuntu 18.04  
+OS: Ubuntu 18.10  
 Desktop Environment: None  
 Remote Desktop: None  
 Jupyter Notebook: 5.6.0  
@@ -15,7 +15,7 @@ JupyterLab: 0.34.2
 JupyterHub: 0.9.1  
 Jupyter Kernels:  
 - Python 3.6 
-- Julia 
+- Julia 1.01
   
 ## Usage in Linux/Unix
 
