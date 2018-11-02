@@ -8,4 +8,5 @@ RUN apt-get update \
     && apt-get autoclean -y
 
 # install IJulia  
-RUN julia -e 'empty!(DEPOT_PATH); push!(DEPOT_PATH, "/usr/share/julia"); using Pkg; Pkg.add("IJulia")'
+RUN julia -e 'empty!(DEPOT_PATH); push!(DEPOT_PATH, "/usr/share/julia"); using Pkg; Pkg.add("IJulia")' \
+    && cp -r /root/.local/share/jupyter/kernels/julia-* /usr/local/share/jupyter/kernels/
