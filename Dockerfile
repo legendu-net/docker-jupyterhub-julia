@@ -8,4 +8,4 @@ RUN apt-get update \
     && apt-get autoclean -y
 
 # install IJulia  
-RUN julia -e 'using Pkg; Pkg.add("IJulia")'
+RUN julia -e 'empty!(DEPOT_PATH); push!(DEPOT_PATH, "/usr/share/julia"); using Pkg; Pkg.add("IJulia")'
