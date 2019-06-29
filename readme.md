@@ -1,4 +1,4 @@
-# [dclong/jupyterhub-julia](https://hub.docker.com/r/dclong/jupyterhub-julia/)
+# dclong/jupyterhub-julia [@DockerHub](https://hub.docker.com/r/dclong/jupyterhub-julia/) | [@GitHub](https://github.com/dclong/docker-jupyterhub-julia)
 
 JupyterHub with Julia (via the [IJulia kernel](https://github.com/JuliaLang/IJulia.jl)) in Docker.
 **It is suggested that you use [dclong/jupyterhub-ds](https://hub.docker.com/r/dclong/jupyterhub-ds/)
