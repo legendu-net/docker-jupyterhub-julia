@@ -4,6 +4,10 @@ JupyterHub with Julia (via the [IJulia kernel](https://github.com/JuliaLang/IJul
 **It is suggested that you use [dclong/jupyterhub-ds](https://hub.docker.com/r/dclong/jupyterhub-ds/)
 for data science related work.**
 
+## Prerequisite
+You need to [install Docker](http://www.legendu.net/en/blog/docker-installation/) before you use this Docker image.
+
+
 ## Usage in Linux/Unix
 
 Please refer to the Section
