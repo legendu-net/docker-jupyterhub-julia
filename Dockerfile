@@ -1,4 +1,4 @@
-FROM dclong/jupyterhub:18.10
+FROM dclong/jupyterhub
 
 RUN apt-get update \
     && apt-get install -y julia \
