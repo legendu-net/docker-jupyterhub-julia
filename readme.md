@@ -29,7 +29,7 @@ docker run -d \
     -e DOCKER_GROUP_ID=`id -g` \
     -e DOCKER_ADMIN_USER=`id -un` \
     -v "$(pwd)":/workdir \
-    -v $(dirname $HOME):/home_host \
+    -v "$(dirname $HOME)":/home_host \
     dclong/jupyterhub-julia /scripts/sys/init.sh
 ```
 Use the image with the `next` tag (which is the testing/next version of dclong/jupyterhub-julia).
@@ -44,7 +44,7 @@ docker run -d \
     -e DOCKER_GROUP_ID=`id -g` \
     -e DOCKER_ADMIN_USER=`id -un` \
     -v "$(pwd)":/workdir \
-    -v $(dirname $HOME):/home_host \
+    -v "$(dirname $HOME)":/home_host \
     dclong/jupyterhub-julia:next /scripts/sys/init.sh
 ```
 The following command (only works on Linux) does the same as the above one 
@@ -62,7 +62,7 @@ docker run -d \
     -e DOCKER_GROUP_ID=`id -g` \
     -e DOCKER_ADMIN_USER=`id -un` \
     -v "$(pwd)":/workdir \
-    -v $(dirname $HOME):/home_host \
+    -v "$(dirname $HOME)":/home_host \
     dclong/jupyterhub-julia /scripts/sys/init.sh
 ```
 Use the image with the `next` tag (which is the testing/next version of dclong/jupyterhub-julia).
@@ -79,7 +79,7 @@ docker run -d \
     -e DOCKER_GROUP_ID=`id -g` \
     -e DOCKER_ADMIN_USER=`id -un` \
     -v "$(pwd)":/workdir \
-    -v $(dirname $HOME):/home_host \
+    -v "$(dirname $HOME)":/home_host \
     dclong/jupyterhub-julia:next /scripts/sys/init.sh
 ```
 ## [Detailed Information](http://www.legendu.net/en/blog/my-docker-images/#list-of-images-and-detailed-information) 
