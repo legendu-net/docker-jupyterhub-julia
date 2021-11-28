@@ -20,3 +20,4 @@ jobs:
           title: Merge dev into main
           branch: dev
           assignees: dclong  
+          token: ${{ secrets.GITHUBACTIONS }} 
