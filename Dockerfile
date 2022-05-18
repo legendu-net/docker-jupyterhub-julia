@@ -1,6 +1,6 @@
 # NAME: dclong/jupyterhub-julia
 FROM dclong/jupyterhub
-# GIT: https://github.com/dclong/docker-jupyterhub.git
+# GIT: https://github.com/legendu-net/docker-jupyterhub.git
 
 RUN apt-get update \
     && apt-get install -y julia \
