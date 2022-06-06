@@ -20,6 +20,7 @@ and mounts the current working directory and `/home` on the host machine
 to `/workdir` and `/home_host` in the container respectively.
 ```
 docker run -d --init \
+    --platform linux/amd64 \
     --hostname jupyterhub-julia \
     --log-opt max-size=50m \
     -p 8000:8000 \
@@ -35,6 +36,7 @@ docker run -d --init \
 Use the image with the `next` tag (which is the testing/next version of dclong/jupyterhub-julia).
 ```
 docker run -d --init \
+    --platform linux/amd64 \
     --hostname jupyterhub-julia \
     --log-opt max-size=50m \
     -p 8000:8000 \
@@ -51,6 +53,7 @@ The following command (only works on Linux) does the same as the above one
 except that it limits the use of CPU and memory.
 ```
 docker run -d --init \
+    --platform linux/amd64 \
     --hostname jupyterhub-julia \
     --log-opt max-size=50m \
     --memory=$(($(head -n 1 /proc/meminfo | awk '{print $2}') * 4 / 5))k \
@@ -68,6 +71,7 @@ docker run -d --init \
 Use the image with the `next` tag (which is the testing/next version of dclong/jupyterhub-julia).
 ```
 docker run -d --init \
+    --platform linux/amd64 \
     --hostname jupyterhub-julia \
     --log-opt max-size=50m \
     --memory=$(($(head -n 1 /proc/meminfo | awk '{print $2}') * 4 / 5))k \
