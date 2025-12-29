@@ -2,8 +2,8 @@
 FROM dclong/jupyterhub
 # GIT: https://github.com/legendu-net/docker-jupyterhub.git
 
-RUN apt-get update \
-    && apt-get install -y julia \
+RUN apt-get -y update \
+    && apt-get -y install julia \
     && /scripts/sys/purge_cache.sh
 
 # install IJulia  
